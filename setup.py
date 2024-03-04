@@ -28,7 +28,7 @@ REQUIRED_PACKAGES = [
     'torch<2.3,>=2.2.1',
     'matplotlib',
     'BeatNet<1.1.2,>=0.0.4',
-    'madmom',  # NOTE: xinstall from source
+    'madmom',  # NOTE: Install from source https://github.com/CPJKU/madmom
 ]
 
 
