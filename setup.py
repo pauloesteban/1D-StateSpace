@@ -20,9 +20,9 @@ import distutils.cmd
 REQUIRED_PACKAGES = [
     'numpy',
     'Cython',
-    'librosa>=0.8.0',
-    'numba==0.54.1',
-    'mido>=1.2.6',
+    'librosa>=0.10.0',
+    'numba==0.58.0',
+    'mido>=1.3.2',
     'pytest',
     #'pyaudio',
     ##'pyfftw',
