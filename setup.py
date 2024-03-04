@@ -18,18 +18,17 @@ import distutils.cmd
 
 # Required packages
 REQUIRED_PACKAGES = [
-    'numpy',
-    'Cython',
-    'librosa>=0.10.0',
-    'numba==0.58.0',
-    'mido>=1.3.2',
+    'numpy<1.26',
+    'cython',
+    'librosa<0.11,>=0.10.0',
+    'numba<0.59.0,>=0.58.0',
+    'mido<1.4.0,>=1.3.2',
     'pytest',
-    #'pyaudio',
-    ##'pyfftw',
-    'torch',
-    'Matplotlib',
-    'BeatNet>=0.0.4',
-    'madmom',
+    'pyaudio;platform_system!="Windows"',  # NOTE: Install PortAudio, e.g., `brew install portaudio` on macOS
+    'torch<2.3,>=2.2.1',
+    'matplotlib',
+    'BeatNet<1.1.2,>=0.0.4',
+    'madmom',  # NOTE: xinstall from source
 ]
 
 
@@ -66,7 +65,6 @@ setuptools.setup(
     version="0.0.8",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    # packages=find_packages(),
     include_package_data=True,
     install_requires=REQUIRED_PACKAGES,
 

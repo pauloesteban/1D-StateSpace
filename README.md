@@ -29,14 +29,9 @@ A vector including beats, downbeats, local tempo, and local meter columns, respe
 
 Installation Command:
 ---------------------
-Approach #1: Installing binaries from the pypi website:
-```
-pip install jump-reward-inference
-```
 
-Approach #2: Installing directly from the Git repository:
 ```
-pip install git+https://github.com/mjhydri/1D-StateSpace
+pip install git+https://github.com/pauloesteban/1D-StateSpace
 ```
 * Note that by using either of the approaches all dependencies and required packages get installed automatically except Pyaudio that connot be installed that way. Pyaudio is a python binding for Portaudio to handle audio streaming. 
  
